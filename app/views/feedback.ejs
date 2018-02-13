@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= title %></title>
+<link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+<style> 
+    .container{
+        width: 40%;
+        background-color:#9cd0a8;
+        margin-top: 40px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+<h2><%= title %></h2>
+<form method = "post">
+  <div class="form-group">
+    <label for="firstName">First Name</label>
+    <input type="text" class="form-control" id="firstName">
+  </div>
+  <div class="form-group">
+    <label for="lastName">Last Name</label>
+    <input type="text" class="form-control" id="lastName" >
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" id="email" value = "<%=email%>" >
+  </div>
+  <div class="form-group">
+    <label>Semester: </label>
+        <select>
+            <option value="Semester 1">Semester 1</option>
+            <option value="Semester 1">Semester 2</option>
+            <option value="Semester 1">Semester 3</option>
+            <option value="Semester 1">Semester 4</option>
+            <option value="Semester 1">Semester 5</option>
+            <option value="Semester 1">Semester 6</option>
+        </select> <br />
+    </div>
+    <div class="form-group">
+            <label for="CurrentGpa">CurrentGpa</label>
+            <input type="number" step="any" class="form-control" id="CurrentGpa">
+    </div> 
+  <div class="form-group">
+    <label for="comments">Your comments</label>
+    <textarea class="form-control" id="comments" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+<!-- JavaScript Section -->
+<script src="./jquery/dist/jquery.min.js"></script>
+<script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
